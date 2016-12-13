@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 while(progress <= 100){
                     Log.e("=========",progress+"");
+                    Log.e("=========",progress+"");
                     circleround.setProgress(progress);
 
                     runOnUiThread(new Runnable() {
