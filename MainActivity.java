@@ -2,6 +2,7 @@ package com.example.zs.circle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     private float progress=0;
@@ -17,10 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 while(progress <= 100){
-
-
-                    System.out.println(progress);
-
+                    Log.e("=========",progress+"");
                     circleround.setProgress(progress);
 
                     runOnUiThread(new Runnable() {
